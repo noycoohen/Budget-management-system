@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Budget mangment</title>
+    <script type="module" src="codefiles/addAnddelete.js" defer></script>
+   
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Coming+Soon&family=Poppins:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylefiles/budgetstyle.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Budget Tracker<span>.</span></a>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Get start</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+    </header>
+
+    <div class="app">
+      <table class="budget-tracker">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Type</th>
+            <th>Category</th>
+            <th>Amount</th>
+
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="entries">
+          <tr>
+            <td>
+              <input id="input-date" type="date" />
+            </td>
+            <td>
+              <input
+                id="input-description"
+                type="text"
+                placeholder="add description"
+              />
+            </td>
+            <td>
+              <select id="input-type">
+                <option value="expense">Expense</option>
+                <option value="income">Income</option>
+              </select>
+            </td>
+            <td>
+              <select id="input-category">
+                <option value="shopping">Shopping</option>
+                <option value="transportation">Transportation</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="food">Food</option>
+                <option value="other">Other</option>
+              </select>
+            </td>
+            <td>
+              <input type="number" id="input-amount" placeholder="$0" />
+            </td>
+            <td colspan="5" class="controls">
+              <button type="button" id="new-entry">Add Entry</button>
+            </td>
+           
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td colspan="5" class="controls">
+              <div id="msg"></div>
+              <div id="msg1"></div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5" class="summary">
+              <strong>All Expense :</strong>
+              <span id="totalEx">0.00$</span> <br />
+              <strong>All Income :</strong>
+              <span id="totalIn">0.00$</span> <br />
+              <strong>Total:</strong>
+              <span id="total">0.00$</span>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+      <h5>Display by category:</h5>
+      <select name="optionList" id="optionList">
+        <option value="All">All</option>
+        <option value="shopping">Shopping</option>
+        <option value="transportation">Transportation</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="food">Food</option>
+        <option value="other">Other</option>
+      </select>
+      <button id="chooseBtn">choose</button>
+    </div>
+    
+    <div id="container"></div>
+  </body>
+</html>

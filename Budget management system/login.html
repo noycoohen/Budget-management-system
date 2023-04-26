@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <script type="module" src="./codefiles/login.js" defer></script>
+    <link rel="stylesheet" href="./stylefiles/login.css" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Coming+Soon&family=Poppins:wght@300;900&display=swap"
+      rel="stylesheet"
+    /> -->
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Budget Tracker<span>.</span></a>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Get start</a></li>
+        <li><a href="addAnddelete.html">Budget managment</a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+    </header>
+
+    <div class="box">
+      <form>
+        <span class="text-center">login</span>
+        <div class="input-container">
+          <input id="name" type="text" required="" />
+          <label>Full Name</label>
+        </div>
+        <div class="input-container">
+          <input id="email" type="mail" required="" />
+          <label>Email</label>
+        </div>
+        <button id="loginbtn" type="button">Log In</button>
+        <div id="erorrMsg"></div>
+      </form>
+    </div>
+  </body>
+</html>
